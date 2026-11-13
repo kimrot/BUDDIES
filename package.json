@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test --test-reporter=spec tests/*.test.js",
     "dev": "DEMO=1 node --env-file-if-exists=.env --watch server.js",
     "dev:admin": "DEMO=1 ADMIN_USERS=${ADMIN:-admin} node --env-file-if-exists=.env --watch server.js",
     "db:start": "sh scripts/dev-db.sh start",

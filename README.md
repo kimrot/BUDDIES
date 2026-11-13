@@ -22,6 +22,10 @@ watch match notifications arrive. On a phone, browsers only allow GPS and the ca
 use a tunnel (`cloudflared tunnel --url http://localhost:3000`) or type coordinates in the "enter it
 manually" box.
 
+**Tests:** `npm test` runs the API tests in `tests/` (Node's built-in runner). Each test file starts its own
+server against a throwaway database on the dev Postgres, so run `npm run db:start` first. Set `DEV_PG_PORT` if
+that Postgres isn't on 5433, or `TEST_DATABASE_URL` to use another server. Takes about 20 s.
+
 **Settings:** copy `.env.example` to `.env` and fill in what you need. `npm start`, `npm run dev` and the
 `db:`/`photos:` scripts load it automatically (Node 22's `--env-file`); real environment variables win
 over the file, and `.env` is git-ignored.
