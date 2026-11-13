@@ -1,0 +1,10 @@
+{
+  "name": "Drinking Buddies",
+  "short_name": "Buddies",
+  "description": "Swipe to find someone to drink with nearby",
+  "start_url": "/#/swipe",
+  "display": "standalone",
+  "background_color": "#1a1220",
+  "theme_color": "#1a1220",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

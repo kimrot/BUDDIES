@@ -1,0 +1,15 @@
+# HTTPS reverse proxy. Caddy gets and renews the TLS certificate for $DOMAIN automatically
+# (point the domain's DNS A/AAAA record at this server and open ports 80/443 first).
+{$DOMAIN} {
+	encode zstd gzip
+
+	reverse_proxy app:3000 {
+		# Overwrite (not append) the client IP so it can't be spoofed; the app trusts one proxy hop.
+		header_up X-Forwarded-For {remote_host}
+	}
+
+	# Large uploads are rejected by the app anyway (photos ~350 KB, selfies ~500 KB).
+	request_body {
+		max_size 2MB
+	}
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Buddies Admin</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="admin">
+  <header id="topbar"><span class="logo">🛡️ Buddies Admin</span><a href="/#/profile" class="pill">← Back to app</a></header>
+  <main id="view" class="wide">
+    <div class="segmented" id="tabs-admin">
+      <button data-t="selfies" class="on">Selfies</button><button data-t="venues">Venues</button><button data-t="payments">Payments</button><button data-t="reports">Reports</button><button data-t="audit">Audit log</button>
+    </div>
+    <div id="panel"></div>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/admin.js"></script>
+</body>
+</html>

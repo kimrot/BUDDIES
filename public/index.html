@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1220">
+  <title>Drinking Buddies</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header id="topbar" hidden>
+    <span class="logo">🍻 Buddies</span>
+    <button id="statusPill" class="pill" type="button"></button>
+  </header>
+
+  <main id="view"></main>
+
+  <nav id="tabs" hidden>
+    <a href="#/swipe" data-tab="swipe"><span>🔥</span>Swipe</a>
+    <a href="#/matches" data-tab="matches"><span>💬</span>Matches</a>
+    <a href="#/profile" data-tab="profile"><span>👤</span>Profile</a>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/account.js"></script>
+  <script src="/plus.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

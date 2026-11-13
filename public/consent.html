@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1220">
+  <title>Consent and community rules · Drinking Buddies</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<!-- Version 2026-11-12. When you change this text in a way that affects users' data, bump
+     CONSENT_VERSION in server.js so everyone is asked to accept again. -->
+<article class="doc">
+  <p><a href="/">← Back to Drinking Buddies</a></p>
+  <h1>Consent and community rules</h1>
+  <p class="muted small">Version 12 November 2026</p>
+
+  <p>Drinking Buddies helps adults find people nearby to share a drink with. To keep everyone safe and real, we verify who you are and collect some personal information. Please read this before you join. By ticking the boxes on the signup screen, you agree to it.</p>
+
+  <h2>1. You must be 18 or older</h2>
+  <p class="lead">This app is for adults of legal drinking age only. Under Kenyan law, alcohol may not be sold or served to anyone under 18.</p>
+  <ul>
+    <li>You confirm that you are at least 18 years old and that the date of birth you give is true.</li>
+    <li>To like, match or chat, you must verify a Kenyan National ID, passport or alien ID. Your age is taken from that check.</li>
+    <li>If the check shows you are under 18, your account is suspended immediately.</li>
+    <li>You may hold only one account. Each phone number, email address and ID can be linked to one account only.</li>
+  </ul>
+
+  <h2>2. What we collect and why</h2>
+  <p class="lead">We collect only what we need to verify you, show you to nearby people, and keep the app safe.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Why we need it</th><th>How long we keep it</th></tr></thead>
+    <tbody>
+      <tr><td>Username, first name, date of birth, password</td><td>To create your account and confirm you're 18+. Your password is stored only as a secure hash.</td><td>Until you delete your account</td></tr>
+      <tr><td>Phone number</td><td>To verify you with an SMS code, send security alerts and payment receipts</td><td>Until you delete your account</td></tr>
+      <tr><td>Email address</td><td>To verify you, reset your password and send security alerts</td><td>Until you delete your account</td></tr>
+      <tr><td>Profile photos (up to 6) and bio</td><td>To show you to other verified users</td><td>Until you remove them or delete your account</td></tr>
+      <tr><td>Verification selfie</td><td>So an admin can check it matches your main profile photo</td><td>Deleted as soon as the admin has reviewed it</td></tr>
+      <tr><td>Government ID</td><td>Checked against the national registry to confirm your identity and age. We never store the ID number, only a one-way code that stops the same ID being used twice.</td><td>The code is kept until you delete your account</td></tr>
+      <tr><td>Your location when you tap "I'm out"</td><td>To show you people nearby and give them a rounded distance to you</td><td>Your "out" status expires after 1–8 hours</td></tr>
+      <tr><td>Where you're drinking and what you're having</td><td>To show on your card and help people find a shared spot</td><td>Expires with your "out" status</td></tr>
+      <tr><td>Likes, passes, matches, chats and drink offers</td><td>To run matching and chat</td><td>Until you or your match delete them, or you delete your account</td></tr>
+      <tr><td>M-Pesa payments (phone number, amount, receipt number)</td><td>To process Buddies Plus and Boost purchases and prevent fraud</td><td>[7 years, for tax records]</td></tr>
+      <tr><td>Reports, security events and login history</td><td>To investigate abuse and protect accounts</td><td>[12 months]</td></tr>
+      <tr><td>Push notification token</td><td>To tell you about matches when the app is closed</td><td>Until you turn notifications off</td></tr>
+    </tbody>
+  </table></div>
+  <p>Photos are resized and their hidden location data (EXIF) is removed before upload. We don't sell your data, and we don't use it for advertising outside the app.</p>
+
+  <h2>3. Who sees your information</h2>
+  <p class="lead">Other users see your profile, never your contact details or exact location.</p>
+  <ul>
+    <li><b>Other verified users</b> see your first name, age, photos, bio, where you're drinking, what you're having and a rounded distance. They never see your phone number, email, ID, date of birth or exact location.</li>
+    <li><b>Partner bars</b> see only totals, such as how many people checked in. They never see who you are. They can send you deals only if you turn that on in your Profile. It's off by default.</li>
+    <li><b>Our admins</b> review selfies, reports and bans. Every admin action is logged.</li>
+  </ul>
+  <p>We share data with these service providers, only so they can do their job for us:</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Provider</th><th>What they get</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Smile ID</td><td>Your ID details and the name and date of birth on it</td><td>To check your ID against the government registry</td></tr>
+      <tr><td>Africa's Talking</td><td>Your phone number and message text</td><td>To send SMS codes and alerts</td></tr>
+      <tr><td>Resend</td><td>Your email address and message text</td><td>To send verification and security emails</td></tr>
+      <tr><td>Safaricom (M-Pesa)</td><td>Your phone number and payment amount</td><td>To process payments</td></tr>
+      <tr><td>[Cloud storage provider]</td><td>Your photos</td><td>To store them securely in a private bucket</td></tr>
+      <tr><td>[Hosting provider]</td><td>All app data, encrypted in transit</td><td>To run the app</td></tr>
+    </tbody>
+  </table></div>
+  <p>Some of these providers may process data outside Kenya. Where they do, we make sure it's protected as the Data Protection Act requires. We'll also share information with the police or a court if Kenyan law requires it.</p>
+
+  <h2>4. Drink responsibly and meet safely</h2>
+  <p class="lead">You are responsible for how much you drink and for your own safety when you meet someone.</p>
+  <ul>
+    <li>Verification lowers the risk but can't remove it. We can't guarantee anyone's behaviour.</li>
+    <li>Meet in public places, such as the bar on their card. Tell a friend where you're going. Arrange your own way home.</li>
+    <li>Never drive after drinking. Know your limit, and stop if you or the person you're with has had too much.</li>
+    <li>Don't accept a drink you didn't see poured. Keep your drink with you.</li>
+    <li>No one has to accept a drink offer, stay longer than they want, or do anything they don't want to do.</li>
+    <li>If you feel unsafe, leave and call <b>999</b> or <b>112</b>. For gender-based violence, call the free <b>1195</b> helpline.</li>
+  </ul>
+  <p>Drinking Buddies doesn't sell or serve alcohol. We aren't responsible for what happens at venues or between users when they meet.</p>
+
+  <h2>5. Community rules</h2>
+  <p class="lead">Be real and respectful. Breaking these rules can get you banned.</p>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Pretend to be someone else, or use photos that aren't of you</li>
+    <li>Harass, threaten, insult or pressure anyone, in chat or in person</li>
+    <li>Send sexual content to someone who hasn't asked for it</li>
+    <li>Use the app to sell anything, including sex, drugs or services, or to scam people</li>
+    <li>Share another user's photos, messages or personal details outside the app</li>
+    <li>Bring anyone under 18 into a meet-up involving alcohol</li>
+  </ul>
+  <p>You can report anyone from their profile or chat. If 3 different people report someone, that person is hidden from the feed until an admin reviews it. Admins can ban accounts, and a banned user is logged out on every device. We may keep the reports and the relevant chat messages for safety investigations.</p>
+
+  <h2>6. Your rights</h2>
+  <p class="lead">Under Kenya's Data Protection Act, 2019, you have control over your data.</p>
+  <p>You have the right to:</p>
+  <ul>
+    <li><b>Know</b> what data we hold about you, and get a copy of it</li>
+    <li><b>Correct</b> anything that's wrong</li>
+    <li><b>Delete</b> your account and data at any time, from Profile → Delete account</li>
+    <li><b>Object</b> to or limit how we use your data, for example by turning off partner deals or notifications</li>
+    <li><b>Withdraw your consent</b> at any time. Some features need certain data: without location you can't appear nearby, and without ID verification you can't like or chat.</li>
+    <li><b>Complain</b> to the Office of the Data Protection Commissioner (ODPC) at <a href="https://www.odpc.go.ke" target="_blank" rel="noopener">odpc.go.ke</a></li>
+  </ul>
+  <p>When you delete your account, your profile, photos and chats are removed. Payment records, the one-way ID code and security logs are kept only as long as the law or fraud prevention requires (see the table in section 2).</p>
+  <p>If we change this consent in a way that affects your data, we'll tell you in the app and ask you to agree again.</p>
+  <p><b>Contact:</b> [Company legal name], [address], [privacy@yourdomain]. Data Protection Officer: [name]. ODPC registration number: [number].</p>
+</article>
+</body>
+</html>
